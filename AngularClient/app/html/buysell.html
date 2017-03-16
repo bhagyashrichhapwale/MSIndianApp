@@ -1,0 +1,37 @@
+﻿
+
+    <div class="container" style="width: 100%;height: 2000px;width:100%;background-color:black">
+        <div class="col-md-12 fill">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row" ng-repeat="item in vm.items" id="itemRow" style="color:white;border:0.5px grey solid;height:150px;margin-top:10px;padding:20px">
+                    <div class="col-md-2">
+                        <img src="../../images/{{item.imageUrl}}" height="100" width="80" />
+                    </div>
+                    <div class="col-md-10">
+                        <p style="color: white;font-size: 0.9em">{{item.itemName}}</p>
+                        <p style="color: white;font-size: 0.9em">{{item.itemDescription}}</p>
+                        <p style="color: white;font-size: 0.9em">{{item.price | currency}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--<ol ng-repeat ="item in vm.items"style="float: left;margin-top: 20px">
+
+            <li style="list-style-type: none;display: inline-block;margin-left: 20px">
+                <div>
+                    <p style="color: white;font-size: 0.9em">{{item.itemName}}</p>
+                    <p>
+                        <img src="../../images/{{item.imageUrl}}" height="200" width="100"/>
+                    </p>
+                    <p style="color: white;font-size: 0.9em">{{item.itemDescription}}</p>
+                    <p style="color: white;font-size: 0.9em">{{item.price | currency}}</p>
+
+
+                </div>
+
+            </li>
+        </ol>-->
+        </div>
+</div>
